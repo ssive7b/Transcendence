@@ -13,6 +13,11 @@
 	res.send('hello world')
   })
 
+  give the right to the user for docker :
+
+  sudo usermod -aG docker $USER
+newgrp docker
+
 ### Run server
 
 ```
