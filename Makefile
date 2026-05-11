@@ -8,13 +8,17 @@ up:
 	@echo "[i] Starting ft_transcendence..."
 	@mkdir -p $(HOME)/data/sqlite
 	@mkdir -p $(HOME)/.local/bin
+	@mkdir -p ./nginx/certs
 	@if ! command -v mkcert > /dev/null 2>&1 && [ ! -f $(MKCERT_BIN) ]; then \
 		echo "[i] Downloading mkcert..."; \
 		curl -sLo $(MKCERT_BIN) https://github.com/FiloSottile/mkcert/releases/download/$(MKCERT_VERSION)/mkcert-$(MKCERT_VERSION)-linux-amd64; \
 		chmod +x $(MKCERT_BIN); \
 	fi
-	@PATH="$(HOME)/.local/bin:$$PATH" mkcert -install 2>/dev/null || true
-	@PATH="$(HOME)/.local/bin:$$PATH" mkcert \
+	@echo "[i] Generating SSL certificates..."
+	@CAROOT=$(HOME)/.local/share/mkcert \
+		PATH="$(HOME)/.local/bin:$$PATH" \
+		TRUST_STORES=nss \
+		mkcert \
 		-key-file ./nginx/certs/key.pem \
 		-cert-file ./nginx/certs/cert.pem \
 		localhost 127.0.0.1 2>/dev/null || true

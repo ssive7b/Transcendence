@@ -2,9 +2,11 @@ services:
   backend:
     build: ./backend
     volumes:
-      - ${HOME}/data/sqlite:/data/sqlite
+      - ./backend/data:/data/sqlite
     env_file:
       - ./backend/.env
+    expose:
+      - "3001"
     restart: unless-stopped
 
   frontend:
@@ -13,6 +15,8 @@ services:
       - ./backend/.env
     depends_on:
       - backend
+    expose:
+      - "3000"
     restart: unless-stopped
 
   nginx:
