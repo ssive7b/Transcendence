@@ -4,7 +4,7 @@ import Button from '@mui/joy/Button'
 
 //function to display the result. Should handle both win and loose state
 
-export default function Result(gameWinner, rounds, roundsWon){
+export default function Result({gameWinner, rounds, roundsWon}){
 	const handlePlayAgain = () => {
         // Navigate back to lobby — adjust path to match your router setup
         window.location.href = '/';

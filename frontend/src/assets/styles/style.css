@@ -2,7 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0px;
   background-color: #081D27;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 h1 {

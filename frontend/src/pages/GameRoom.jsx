@@ -126,8 +126,8 @@ const GameRoom = () => {
   )?.isBot;
 
   return (
-    <div>
-      <Stack direction="row" justifyContent="space-around">
+    <div style={{ minHeight: '100vh', overflowY: 'auto', padding: '8px' }}>
+      <Stack direction="row" justifyContent="space-around" flexWrap="wrap" useFlexGap sx={{ px: 1 }}>
         <p>Status: {gameState.status}</p>
         <p>Players: {gameState.players.length} / {gameState.config.playerCount}</p>
         <p>You are: <strong>{localPlayerId}</strong></p>
@@ -161,7 +161,7 @@ const GameRoom = () => {
           : `⏳ Waiting for ${gameState.activePlayerId}...`}
       </p>
 
-      <Stack direction="row" spacing={2} justifyContent="center">
+      <Stack direction="row" spacing={2} justifyContent="center" flexWrap="wrap" useFlexGap>
         {gameState.players
           .filter(player => player && player.hand && player.hand.length > 0)
           .map((player) => {
@@ -200,7 +200,7 @@ const GameRoom = () => {
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           zIndex: 1000
         }}>
-          <Stack sx={{ minWidth: 300, textAlign: 'center', backgroundColor: 'grey', padding: '8px', borderRadius: '5px' }}>
+          <Stack sx={{ minWidth: 300, textAlign: 'center', backgroundColor: 'grey', padding: '8px', borderRadius: '5px',gap: 1  }}>
             {gameOver.isDraw ? (
               <>
                 <h2>🤝 It's a Draw!</h2>

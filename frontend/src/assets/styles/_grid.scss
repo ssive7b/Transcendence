@@ -34,3 +34,15 @@
     	place-self: anchor-center;
 	}
 }
+
+@media (max-width: 600px) {
+  .player-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player-row > * {
+    width: 100%;
+    max-width: 350px;
+  }
+}

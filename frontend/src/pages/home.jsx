@@ -72,13 +72,24 @@ function Home() {
   const showPhantom = slots.length < MAX_OPPONENTS;
 
   return (
-    <div style={{ height: '100vh' }}>
+    <div style={{ minHeight: '100vh', overflowY: 'auto', padding: '24px 0' }}>
       {user ? (
-        <Stack direction="column" alignItems="center" spacing={3}>
-          <div
-            className="player-row"
-            style={{ display: 'flex', flexDirection: 'row', gap: '16px', alignItems: 'flex-start', justifyContent: 'center', transition: 'all 0.3s ease' }}
-          >
+    <Stack direction="column" alignItems="center" spacing={3} sx={{ pb: 4 }}>
+           <div
+          className="player-row"
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            gap: '16px',
+            alignItems: 'flex-start',
+            justifyContent: 'center',
+            transition: 'all 0.3s ease',
+            padding: '0 16px',
+            width: '100%',
+            boxSizing: 'border-box',
+          }}
+        >
             <ProfileCard user={user}  onLogout={handleLogout}  onUpdate={(updatedUser) => setUser(updatedUser)}/>
 
             {slots.map((slot, index) => (
