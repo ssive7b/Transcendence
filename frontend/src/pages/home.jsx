@@ -27,11 +27,14 @@ function Home() {
   const [user, setUser] = useState(null);
   const [slots, setSlots] = useState([]);
 
- const refreshUser = async () => {
-  const res = await axios.get('/auth/me', { withCredentials: true });
-  setUser(res.data);
+const refreshUser = async () => {
+  try {
+    const res = await axios.get('/auth/me', { withCredentials: true });
+      setUser(res.data.user !== undefined ? res.data.user : res.data);
+  } catch {
+    setUser(null);
+  }
 };
-
 useEffect(() => {
   refreshUser();
 }, []);
