@@ -24,7 +24,7 @@ const Imprint = () => {
       <ul>
         <li>Your 42 login and email address</li>
         <li>Your profile avatar (URL from the 42 API)</li>
-        <li>Your game statistics (wins and losses)</li>
+        <li>Your game statistics (wins)</li>
       </ul>
       <p>
         No data is shared with third parties. All data is stored locally on the server
@@ -34,7 +34,7 @@ const Imprint = () => {
       <h2>4. Game data</h2>
       <p>
         Player cards are fetched in real time from the 42 API and are not permanently stored.
-        Game results (wins/losses) are recorded for leaderboard and profile purposes only.
+        Game results (wins) are recorded for leaderboard and profile purposes only.
       </p>
 
       <h2>5. Acceptable use</h2>
