@@ -66,11 +66,11 @@ router.post('/logout', (req, res) => {
 
 router.get('/me', (req, res) => {
   if (!req.session.user)
-    return res.status(401).json({ error: 'Not logged in' })
+    return res.json({ user: null })
   
   const user = db.prepare('SELECT id, login, email, avatar, wins, losses FROM users WHERE login = ?').get(req.session.user.login)
   if (!user)
-    return res.status(401).json({ error: 'User not found' })
+    return res.json({ user: null })
   
   res.json(user)
 })

@@ -37,9 +37,9 @@ const GameRoom = () => {
   const [localPlayerId, setLocalPlayerId] = useState(null);
   const socketRef = useRef(null);
 
-  const handlePlayAgain = () => {
-    window.location.href = '/';
-  };
+  // const handlePlayAgain = () => {
+  //   window.location.href = '/';
+  // };
 
   useEffect(() => {
     const socket = io('/', { path: '/socket.io', withCredentials: true });
@@ -219,7 +219,7 @@ const GameRoom = () => {
                 ))}
               </>
             )}
-            <Button variant="solid" color="primary" onClick={handlePlayAgain}>Play Again</Button>
+            {/* <Button variant="solid" color="primary" onClick={handlePlayAgain}>Play Again</Button> */}
             <Button variant="outlined" color="neutral" onClick={() => window.location.href = '/'}>Quit</Button>
           </Stack>
         </div>
