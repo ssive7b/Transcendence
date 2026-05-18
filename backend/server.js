@@ -60,6 +60,8 @@ app.use('/api/games', require('./routes/games')(io));
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
+
+
  
 function updateStats(game) {
   if (game.status !== 'finished') return;

@@ -19,12 +19,12 @@ team coordination and removes obstacles.
 Docker + backend supervisor
 
 
-###### -aternero
+###### -aternero Developers
 
 Specialist of UI/UX , unit tests
 
 
-###### -sstoev 
+###### -sstoev Developers
 
 Specialist of backend
 
@@ -430,3 +430,4 @@ mv localhost+1-key.pem ~/Transcendence/nginx/certs/key.pem
 
 
 # RESSOURCE
+
