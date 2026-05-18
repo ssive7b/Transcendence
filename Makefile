@@ -37,6 +37,10 @@ up:
 		echo "╚══════════════════════════════════════════╝"; \
 		echo ""
 
+test:
+	@echo "[i] Running backend tests..."
+	@docker run --rm -v $(PWD)/backend:/app -w /app node:20-alpine npm test
+
 down:
 	@docker compose -f $(COMPOSE_FILE) down
 
@@ -53,4 +57,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all up down clean fclean re
+.PHONY: all up down clean fclean re test
