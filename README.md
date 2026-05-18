@@ -7,26 +7,25 @@ _This project has been created as part of the 42 curriculum by csalamit, aterner
 
 ###### -aehrl PO . Developers
 
-Defines the product vision, prioritizes features, and ensures the project meets user needs.
-
-logic of the game  , fronted + backend inplementation of the game 
-
-
-###### -csalamit PM .Developers
-
-team coordination and removes obstacles.
-
-Docker + backend supervisor
+* Defines the product vision, prioritizes features, and ensures the project meets user needs.
+* Defines the logic of the game, frontend and backend implementation of the game .
 
 
-###### -aternero Developers
+###### -csalamit PM . Developers
 
-Specialist of UI/UX , unit tests
+* Team coordination: Organizes meetings, sets deadlines, and ensures effective communication among team members.
+* Removes obstacles: Identifies and addresses any issues that may hinder the team's progress, ensuring a smooth development process. The PM is responsible for ensuring that the project stays on track, meets deadlines, and that the team is working effectively together. They facilitate communication, manage resources, and help resolve any conflicts or challenges that arise during development. The PM's role is crucial for maintaining.
+* Docker and backend deployment: Responsible for setting up the deployment pipeline, including containerization with Docker and ensuring the backend is properly deployed and accessible. This includes configuring the server, managing environment variables, and ensuring that the application runs smoothly in a production environment. The PM will work closely with the backend developer to ensure that the deployment process is efficient and reliable.
 
 
-###### -sstoev Developers
+###### -aternero . Developers
 
-Specialist of backend
+* Frontend development, including UI/UX design and implementation. Responsible for creating a visually appealing and user-friendly interface for the game, ensuring that it is responsive and accessible across different devices. This includes designing the layout, choosing color schemes, and implementing interactive elements to enhance the user experience.
+
+
+###### -sstoev . Developers
+
+* Specialist of backend development, responsible for implementing the server-side logic, database management, and API integration. This includes designing the database schema, implementing authentication and user management, and ensuring that the backend can handle game logic and real-time interactions effectively. The backend developer will work closely with the PM to ensure that the deployment process is efficient and reliable.
 
 #### General requirements
 -  The project must be a web application, and requires a frontend, backend, and a database.
@@ -431,3 +430,31 @@ mv localhost+1-key.pem ~/Transcendence/nginx/certs/key.pem
 
 # RESSOURCE
 
+## Documentation
+
+* [42 API Documentation](https://api.intra.42.fr/apidoc) : Official documentation for the 42 API, essential for integrating user authentication and data retrieval.
+* [Doc React](https://es.react.dev/) : Official React documentation, a great resource for learning React concepts and best practices.
+* [Docker](https://docs.docker.com/) : Official Docker documentation for containerization and deployment.
+* [Express framework](https://expressjs.com/) : Express.js documentation, a minimal and flexible Node.js web application framework.
+* [GitHub](https://docs.github.com/en) : GitHub documentation for version control and collaboration.
+* [Material UI / MUI](https://mui.com/) : A popular React UI framework with a comprehensive set of pre-built components and a customizable design system.
+* [Node.js](https://nodejs.org/en/docs/) : Official Node.js documentation, essential for backend development with Express.
+
+## Learning Resources
+
+* [Aprendiendo Git y GitHub: Desde cero hasta buenas prácticas y estrategias de trabajo en equipo](https://www.amazon.es/Aprendiendo-Git-GitHub-pr%C3%A1cticas-estrategias/dp/B0D2LPMG6F?ie=UTF8&tag=hydes-21&hvadid=722222742463&hvpos=&hvexid=&hvnetw=g&hvrand=7550724054302413617&hvpone=&hvptwo=&hvqmt=&hvdev=c&ref=pd_sl_21gxdi1o00_e&tag=&ref=&adgrpid=168856555894&hvpone=&hvptwo=&hvadid=722222742463&hvpos=&hvnetw=g&hvrand=7550724054302413617&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9197933&hvtargid=dsa-1595363597442&hydadcr=&mcid=&gad_source=1) : A comprehensive guide to learning Git and GitHub, covering everything from basic commands to advanced workflows and best practices for team collaboration.
+* [W3Schools](https://www.w3schools.com/) : A comprehensive resource for learning web development technologies, including HTML, CSS, JavaScript, and more.
+	* [HTML](https://www.w3schools.com/html/default.asp) : Learn the basics of HTML for structuring web pages.
+	* [CSS](https://www.w3schools.com/css/default.asp) : Learn how to style web pages using CSS.
+	* [JavaScript](https://www.w3schools.com/js/default.asp) : Learn JavaScript for adding interactivity to web pages.
+	* [React](https://www.w3schools.com/react/default.asp) : A beginner-friendly introduction to React.js.
+	* [Node.js](https://www.w3schools.com/nodejs/default.asp) : Learn Node.js for server-side development.
+
+## Communication Tools
+
+* [Slack](https://slack.com/) : For team communication and collaboration.
+* [WhatsApp](https://www.whatsapp.com/) : For team communication and coordination.
+
+## Project Management Tools
+
+* [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) : For project management and task tracking using GitHub's built-in project boards.
