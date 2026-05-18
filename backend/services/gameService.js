@@ -108,8 +108,8 @@ class GameService {
       throw new Error('Not enough cards in deck');
 
     const players = Array.from({ length: playerCount }, (_, i) => ({
-      id: i === 0 ? 'player_1' : `bot_${i}`,
-      name: i === 0 ? 'Player 1' : `Bot ${i}`,
+      id: i === 0 ? 'player_1' : `opponent_${i}`,
+      name: i === 0 ? 'Player 1' : `opponent_${i}`,
       hand: [],
       roundWins: 0,
       socketId: null,
