@@ -35,7 +35,6 @@ const DataPolicy = () => {
           <List marker="disc" sx={{ pl: 2 }}>
             <ListItem>Account credentials (hashed & salted)</ListItem>
             <ListItem>Game statistics (wins/losses)</ListItem>
-            <ListItem>Friends list and chat history</ListItem>
             <ListItem>42 OAuth public profile data</ListItem>
           </List>
         </Box>
@@ -43,7 +42,7 @@ const DataPolicy = () => {
         <Box>
           <Typography level="h4">2. Data Usage</Typography>
           <Typography level="body-md">
-            Data is used for authentication, matchmaking, chat, and leaderboard features.
+            Data is used for authentication, matchmaking.
           </Typography>
         </Box>
 
@@ -61,12 +60,7 @@ const DataPolicy = () => {
           </Typography>
         </Box>
 
-        <Box>
-          <Typography level="h4">5. Cookies</Typography>
-          <Typography level="body-md">
-            Session cookies are used to maintain login state.
-          </Typography>
-        </Box>
+
       </Stack>
     </Sheet>
   );
